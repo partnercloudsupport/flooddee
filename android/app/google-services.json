@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "475533825542",
+    "firebase_url": "https://foodonline-onedaycat.firebaseio.com",
+    "project_id": "foodonline-onedaycat",
+    "storage_bucket": "foodonline-onedaycat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475533825542:android:7a32c836f0fbcff5",
+        "android_client_info": {
+          "package_name": "com.example.flutterfoodonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475533825542-c476hu4sjndne0l42kvabikuk14p8qg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN_bKbEF2PNrayRGhbeQQX1D8En9B0Z8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475533825542:android:2769a70fede15943",
+        "android_client_info": {
+          "package_name": "com.onedaycat.foodonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475533825542-n79nr20n5jhhd9id5v98b1gllbr4hhv5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedaycat.foodonline",
+            "certificate_hash": "ec7692563a6a4c998a339df61ab480db0c00192a"
+          }
+        },
+        {
+          "client_id": "475533825542-ir0qg9k15pnrh0aq7i64iehnvj6ba8kg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedaycat.foodonline",
+            "certificate_hash": "bdee6ffbfb850733d8f5dc43d0e842bcf558c3fe"
+          }
+        },
+        {
+          "client_id": "475533825542-c476hu4sjndne0l42kvabikuk14p8qg8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN_bKbEF2PNrayRGhbeQQX1D8En9B0Z8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475533825542-c476hu4sjndne0l42kvabikuk14p8qg8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "475533825542-35mrolnske7unnte69n4fs3vq2atuppr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterfoodonline"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
