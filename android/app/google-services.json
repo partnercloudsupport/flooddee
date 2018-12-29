@@ -83,10 +83,10 @@
               "client_type": 3
             },
             {
-              "client_id": "475533825542-35mrolnske7unnte69n4fs3vq2atuppr.apps.googleusercontent.com",
+              "client_id": "475533825542-sae1eu8olnut15c77ooobk22ghpn1ed4.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.flutterfoodonline"
+                "bundle_id": "com.atthapon.flooddee"
               }
             }
           ]
