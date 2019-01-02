@@ -1,6 +1,6 @@
 import 'package:flutter_foodonline/src/domian/exception/BadRequestError.dart';
 
-class Stock {
+class StockEntity {
   String productId;
   int qty;
   int price;

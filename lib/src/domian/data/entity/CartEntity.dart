@@ -25,7 +25,7 @@ class CartEntity {
     };
   }
 
-  checkStock(ProductQTY productQTY, Stock stock) {
+  checkStock(ProductQTY productQTY, StockEntity stock) {
     if (productQTY.product.id != stock.productId)
       throw BadRequestError.PRODUCT_NOT_MATCHED;
 
@@ -39,7 +39,7 @@ class CartEntity {
     if (!stock.isStockEnough(qty)) throw BadRequestError.PRODUCT_OUT_STOCK;
   }
 
-  add(ProductQTY productQTY, Stock stock) {
+  add(ProductQTY productQTY, StockEntity stock) {
     try {
       this.checkStock(productQTY, stock);
 
@@ -66,7 +66,7 @@ class CartEntity {
     }
   }
 
-  updateQTY(ProductQTY productQTY, Stock stock) {
+  updateQTY(ProductQTY productQTY, StockEntity stock) {
     if (productQTY.product.id != stock.productId)
       throw BadRequestError.PRODUCT_NOT_MATCHED;
     if (!stock.isStockEnough(productQTY.qty))
