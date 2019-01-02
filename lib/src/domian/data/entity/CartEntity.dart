@@ -1,5 +1,5 @@
 import 'package:flutter_foodonline/src/domian/data/aggregate/ProductQTY.dart';
-import 'package:flutter_foodonline/src/domian/data/aggregate/Stock.dart';
+import 'package:flutter_foodonline/src/domian/data/entity/Stock.dart';
 import 'package:flutter_foodonline/src/domian/exception/BadRequestError.dart';
 import 'package:flutter_foodonline/src/domian/exception/Exceptions.dart';
 import 'package:flutter_foodonline/src/domian/exception/NotFoundError.dart';
