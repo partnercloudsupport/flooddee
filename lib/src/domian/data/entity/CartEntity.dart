@@ -1,5 +1,5 @@
 import 'package:flutter_foodonline/src/domian/data/aggregate/ProductQTY.dart';
-import 'package:flutter_foodonline/src/domian/data/entity/Stock.dart';
+import 'package:flutter_foodonline/src/domian/data/aggregate/ProductStock.dart';
 import 'package:flutter_foodonline/src/domian/exception/BadRequestError.dart';
 import 'package:flutter_foodonline/src/domian/exception/Exceptions.dart';
 import 'package:flutter_foodonline/src/domian/exception/NotFoundError.dart';
@@ -25,8 +25,8 @@ class CartEntity {
     };
   }
 
-  checkStock(ProductQTY productQTY, StockEntity stock) {
-    if (productQTY.product.id != stock.productId)
+  checkStock(ProductQTY productQTY, ProductStockEntity productStock) {
+    if (productQTY.product.id != productStock.productId)
       throw BadRequestError.PRODUCT_NOT_MATCHED;
 
     var indexInCart = this.productIds.indexOf(productQTY.product.id);
@@ -36,12 +36,12 @@ class CartEntity {
       qty += products[indexInCart].qty;
     }
 
-    if (!stock.isStockEnough(qty)) throw BadRequestError.PRODUCT_OUT_STOCK;
+    if (!productStock.isStockEnough(qty)) throw BadRequestError.PRODUCT_OUT_STOCK;
   }
 
-  add(ProductQTY productQTY, StockEntity stock) {
+  add(ProductQTY productQTY, ProductStockEntity productStock) {
     try {
-      this.checkStock(productQTY, stock);
+      this.checkStock(productQTY, productStock);
 
       var indexInCart = this.productIds.indexOf(productQTY.product.id);
 
@@ -66,10 +66,10 @@ class CartEntity {
     }
   }
 
-  updateQTY(ProductQTY productQTY, StockEntity stock) {
-    if (productQTY.product.id != stock.productId)
+  updateQTY(ProductQTY productQTY, ProductStockEntity productStock) {
+    if (productQTY.product.id != productStock.productId)
       throw BadRequestError.PRODUCT_NOT_MATCHED;
-    if (!stock.isStockEnough(productQTY.qty))
+    if (!productStock.isStockEnough(productQTY.qty))
       throw BadRequestError.PRODUCT_OUT_STOCK;
 
     if (productQTY.qty < 1) {

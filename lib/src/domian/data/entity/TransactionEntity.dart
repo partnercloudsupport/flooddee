@@ -14,4 +14,14 @@ class TransactionEntity {
     amount = data["amount"];
     createdAt = data["createdAt"];
   }
+
+  toMap() {
+    return <String, dynamic>{
+      "transactionId": transactionId,
+      "orderId": orderId,
+      "status": status,
+      "amount": amount,
+      "createdAt": createdAt
+    };
+  }
 }

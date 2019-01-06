@@ -37,8 +37,10 @@ class FirestoreOrderRepository extends OrderRepository {
 
   @override
   getById({@required String orderId}) async {
-    var documentSnapshot =
-        await Firestore.instance.collection(orderCollection).document(orderId).get();
+    var documentSnapshot = await Firestore.instance
+        .collection(orderCollection)
+        .document(orderId)
+        .get();
     return OrderEntity.fromJson(documentSnapshot.data);
   }
 }
